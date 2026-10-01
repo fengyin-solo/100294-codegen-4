@@ -33,3 +33,36 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.success-text { color: #067647; }
+.operator-select { border: 1px solid var(--border); border-radius: 6px; padding: 4px 6px; }
+.editor-card, .panel-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.editor-card h3, .panel-card h3 { margin: 0 0 10px; font-size: 15px; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; }
+.form-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.form-grid label span, .modal-card label span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 4px; }
+.form-grid input, .form-grid select, .form-grid textarea, .modal-card input, .modal-card textarea { width: 100%; border: 1px solid var(--border); border-radius: 6px; padding: 7px 8px; font: inherit; }
+.wide-field { grid-column: span 4; }
+.form-actions { display: flex; gap: 8px; margin-top: 12px; }
+.data-table.compact { font-size: 12px; }
+.pre-cell { white-space: pre-line; min-width: 140px; max-width: 260px; }
+.status-pill { display: inline-block; border-radius: 999px; padding: 2px 8px; font-size: 12px; white-space: nowrap; }
+.status-pending { background: #fffaeb; color: #b54708; }
+.status-processing { background: #eff8ff; color: #175cd3; }
+.status-reviewing { background: #f4f3ff; color: #5925dc; }
+.status-closed { background: #ecfdf3; color: #067647; }
+.recurring { background: #fffbeb; }
+.repeat-badge { display: inline-block; margin-left: 6px; color: #b54708; font-size: 12px; font-style: normal; }
+.timeline-cell { background: #f8fafc; padding: 12px !important; }
+.timeline-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.timeline-grid h4 { margin: 8px 0; font-size: 13px; }
+.saved-record { background: #fff; border: 1px solid var(--border); border-radius: 6px; padding: 8px; }
+.timeline { margin: 0; padding-left: 18px; }
+.timeline li { margin-bottom: 8px; }
+.timeline span, .timeline small { display: block; color: var(--muted); font-size: 12px; }
+.muted { color: var(--muted); font-size: 12px; }
+.modal-mask { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.45); display: flex; align-items: center; justify-content: center; z-index: 10; }
+.modal-card { width: min(560px, calc(100vw - 32px)); background: #fff; border-radius: 10px; padding: 18px; }
+.modal-card h3 { margin: 0 0 4px; }
+.modal-card label { display: block; margin-top: 10px; }
+.check-line { display: flex; align-items: center; gap: 8px !important; }
+.check-line input { width: auto; }

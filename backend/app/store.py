@@ -8,6 +8,30 @@ from typing import Any
 
 from app.seed import SEED_ROWS
 
+MODULE_LABELS = {
+    "register": "使用登记",
+    "boiler": "锅炉管理",
+    "pressurevessel": "压力容器",
+    "pipeline": "压力管道",
+    "elevator": "电梯管理",
+    "crane": "起重机械",
+    "forklift": "场车管理",
+    "inspection": "定期检验",
+    "maintenance": "维保记录",
+    "hazard": "隐患排查",
+    "accident": "事故管理",
+    "operator": "作业人员",
+    "training": "培训考核",
+    "safetyvalve": "安全阀校验",
+    "gauge": "压力表检定",
+    "sparepart": "备件管理",
+    "emergency": "应急演练",
+    "energyeff": "能效监测",
+    "archive": "档案管理",
+    "contract": "维保合同",
+    "fault": "设备故障报送",
+}
+
 
 class Store:
     def __init__(self) -> None:
@@ -32,7 +56,8 @@ class Store:
         for name in self.module_names():
             rows = self.rows(name)
             modules.append({
-                "name": name,
+                "name": MODULE_LABELS.get(name, name),
+                "key": name,
                 "created": len(rows),
                 "pending": sum(1 for row in rows if row.get("pending")),
                 "abnormal": sum(1 for row in rows if row.get("abnormal")),

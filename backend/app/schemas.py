@@ -268,3 +268,29 @@ class ContractEntry(BaseModel):
     field_5: str | None = None  # 到期日期
     field_6: str | None = None  # 是否续签
     field_7: str | None = None  # 合同状态
+
+
+class FaultReportEntry(BaseModel):
+    """设备故障报送单明细结构。"""
+
+    故障单号: str
+    设备编号: str
+    设备名称: str | None = None
+    故障名称: str
+    故障现象: str
+    故障级别: str | None = None
+    报修人: str
+    报修班组: str
+    报修时间: str
+    责任班组: str
+    责任人: str
+    受理人: str | None = None
+    受理时间: str | None = None
+    处置记录: str | None = None
+    处置人: str | None = None
+    处置时间: str | None = None
+    复核人: str | None = None
+    复核意见: str | None = None
+    复核时间: str | None = None
+    处置结论: str | None = None
+    关闭时间: str | None = None
