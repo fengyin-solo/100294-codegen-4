@@ -10,6 +10,7 @@ const Crane = () => import('@/views/crane/index.vue')
 const Forklift = () => import('@/views/forklift/index.vue')
 const Inspection = () => import('@/views/inspection/index.vue')
 const Maintenance = () => import('@/views/maintenance/index.vue')
+const Faultreport = () => import('@/views/faultreport/index.vue')
 const Hazard = () => import('@/views/hazard/index.vue')
 const Accident = () => import('@/views/accident/index.vue')
 const Operator = () => import('@/views/operator/index.vue')
@@ -35,6 +36,7 @@ const router = createRouter({
     { path: '/forklift', name: 'forklift', component: Forklift },
     { path: '/inspection', name: 'inspection', component: Inspection },
     { path: '/maintenance', name: 'maintenance', component: Maintenance },
+    { path: '/faultreport', name: 'faultreport', component: Faultreport },
     { path: '/hazard', name: 'hazard', component: Hazard },
     { path: '/accident', name: 'accident', component: Accident },
     { path: '/operator', name: 'operator', component: Operator },

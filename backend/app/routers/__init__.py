@@ -15,6 +15,7 @@ from app.routers import crane as router_crane
 from app.routers import forklift as router_forklift
 from app.routers import inspection as router_inspection
 from app.routers import maintenance as router_maintenance
+from app.routers import faultreport as router_faultreport
 from app.routers import hazard as router_hazard
 from app.routers import accident as router_accident
 from app.routers import operator as router_operator
@@ -27,4 +28,4 @@ from app.routers import energyeff as router_energyeff
 from app.routers import archive as router_archive
 from app.routers import contract as router_contract
 
-ROUTERS = [router_register, router_boiler, router_pressurevessel, router_pipeline, router_elevator, router_crane, router_forklift, router_inspection, router_maintenance, router_hazard, router_accident, router_operator, router_training, router_safetyvalve, router_gauge, router_sparepart, router_emergency, router_energyeff, router_archive, router_contract]
+ROUTERS = [router_register, router_boiler, router_pressurevessel, router_pipeline, router_elevator, router_crane, router_forklift, router_inspection, router_maintenance, router_faultreport, router_hazard, router_accident, router_operator, router_training, router_safetyvalve, router_gauge, router_sparepart, router_emergency, router_energyeff, router_archive, router_contract]

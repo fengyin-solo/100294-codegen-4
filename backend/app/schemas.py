@@ -137,6 +137,18 @@ class MaintenanceEntry(BaseModel):
     field_6: str | None = None  # 更换部件
     field_7: str | None = None  # 维保状态
 
+class FaultreportEntry(BaseModel):
+    """故障报送明细结构。"""
+
+    field_0: str | None = None  # 故障单号
+    field_1: str | None = None  # 设备编号
+    field_2: str | None = None  # 设备名称
+    field_3: str | None = None  # 故障类别
+    field_4: str | None = None  # 故障描述
+    field_5: str | None = None  # 报修人
+    field_6: str | None = None  # 报送时间
+    field_7: str | None = None  # 故障状态
+
 class HazardEntry(BaseModel):
     """隐患记录明细结构。"""
 
